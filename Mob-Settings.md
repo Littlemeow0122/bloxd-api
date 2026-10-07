@@ -1,6 +1,6 @@
 # Mob Settings
 
-These impact the behaviour of mobs, what they look like, and how they sound. These can either be set on a per-mob basis or the default can be set for all mobs of a particular type.
+These impact the behaviour of mobs, what they look like, and how they sound. These can either be set on a per-mob basis or the default can be set for all mobs of a particular type.  
 These API methods allow you to modify mob settings:
 
 ```js
@@ -50,7 +50,7 @@ Here is the full list of available mob settings:
 
 **Type:** `Partial<Record<ArmourPart, {itemName: string, enchantmentTier?: "Tier 1" | "Tier 2" | "Tier 3" | "Tier 4" | "Tier 5" }>>`
 
-**Example:**
+**Example:**  
 ```ts
 {
 	"Helmet": {
@@ -139,7 +139,7 @@ Here is the full list of available mob settings:
 
 **Type:** `MobBridgeInfo`
 
-**Example:**
+**Example:**  
 ```ts
 {
 	blockToPlace: "Grass",
@@ -172,7 +172,7 @@ Makes the mob lay blocks into the world as it moves. If msToDecay is set to a nu
 
 **Type:** `MobCombatTetherCombatInfo`
 
-**Example:** 
+**Example:**   
 ```ts
 {
 	range: 11,
@@ -193,7 +193,7 @@ Makes the mob lay blocks into the world as it moves. If msToDecay is set to a nu
 
 **Type:** `MobEvadeInfo`
 
-**Example:** 
+**Example:**   
 ```ts
 {
 	probability: 0.6,
@@ -315,7 +315,7 @@ Makes the mob lay blocks into the world as it moves. If msToDecay is set to a nu
 
 **Type:** ` { itemName: string; probabilityOfDrop?: number; dropMinAmount?: number; dropMaxAmount?: number; applyBurstImpulseToDrop?: boolean; }[] `
 
-**Example:** 
+**Example:**   
 ```ts
 [
 	{
@@ -349,7 +349,7 @@ Makes the mob lay blocks into the world as it moves. If msToDecay is set to a nu
 
 **Type:** `MobPetInfo`
 
-**Example:** 
+**Example:**   
 ```ts
 {
 friendshipPoints: 0,
@@ -383,7 +383,7 @@ bonusesGained: [],
 
 **Type:** `MobJumpLocomotionInfo`
 
-**Example:** 
+**Example:**   
 ```ts
 {
 	// Combat / following: hop toward the target on a rested cadence (no slides, base speed 0).
@@ -395,7 +395,7 @@ bonusesGained: [],
 
 **Type:** `MobRandomFacingInfo`
 
-**Example:**
+**Example:**  
 ```ts
 {
 	// Cosmetic only (via baseRenderHeading): jitter +-30 degrees, each equally likely, so it's harder to tell which way it's heading.
@@ -411,7 +411,7 @@ bonusesGained: [],
 
 **Type:** `MobSlideLocomotionInfo`
 
-**Example:**
+**Example:**  
 ```ts
 {
 	// A combat dash to close on a target: initial speed = impulse / mass.
@@ -486,7 +486,7 @@ bonusesGained: [],
 
 **Type:** `PNull<MobTameInfo>`
 
-**Example:**
+**Example:**  
 ```ts
 {
   "tameItemName": [
@@ -566,7 +566,7 @@ Taming configuration for this mob type. Includes tame items, probability, saddle
 
 **Type:** `MobJumpLocomotionInfo`
 
-**Example:** 
+**Example:**   
 ```ts
 {
 	// Wander hops; paired with walkingSlideInfo below for a lively mix of hops and slower slides.
@@ -578,7 +578,7 @@ Taming configuration for this mob type. Includes tame items, probability, saddle
 
 **Type:** `MobRandomFacingInfo`
 
-**Example:** 
+**Example:**   
 ```ts
 {
 	// Cosmetic only (via baseRenderHeading): face mostly backwards, sometimes sideways, occasionally forwards.
@@ -596,7 +596,7 @@ Taming configuration for this mob type. Includes tame items, probability, saddle
 
 **Type:** `MobSlideLocomotionInfo`
 
-**Example:** 
+**Example:**   
 ```ts
 {
 	// Initial slide speed = impulse / mass; friction (far below the default mob 1.5) governs the coast.
@@ -618,7 +618,7 @@ Taming configuration for this mob type. Includes tame items, probability, saddle
 
 **Type:** `MobWarpTargetSpecialAttackInfo`
 
-**Example:** 
+**Example:**   
 ```ts
 {
 	cooldown: 20_000,

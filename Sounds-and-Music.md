@@ -18,7 +18,7 @@ api.playSound(playerId, soundName, volume, rate, posSettings?)
 api.broadcastSound(soundName, volume, rate, posSettings?, exceptPlayerId?)
 ```
 
-**Parameters:**
+**Parameters:**  
 - `soundName`: One of the sound names listed below
 - `volume`: 0.0 to 1.0
 - `rate`: Playback rate (1.0 = normal speed, 0.5 = half speed, 2.0 = double speed)

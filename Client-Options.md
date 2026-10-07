@@ -761,7 +761,7 @@ When null, just use the player's graphics setting. When set, forces lighting on 
 
 **Type:** `LobbyLeaderboardInfo`
 
-**Default:** 
+**Default:**   
 ```ts
 {
 name: {

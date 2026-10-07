@@ -1,7 +1,7 @@
 # Code API
 
-You can run javascript when right clicking code blocks and press to code boards.
-This is only available to owners of worlds lobbies.
+You can run javascript when right clicking code blocks and press to code boards.  
+This is only available to owners of worlds lobbies.  
 The javascript can interact with the Bloxd.io game api.
 
 Please use [our discord](https://discord.gg/playbloxd) to report any issues you come across or features you'd like to see added.

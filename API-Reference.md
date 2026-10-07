@@ -293,8 +293,8 @@ depending on whether "spawnerId" is provided. Calling this function inside those
 ### Returns:
 `PNull<MobId>`
 
-null if the mob could not be spawned.
-This can happen when there are too many mobs in the world for the current number
+null if the mob could not be spawned.  
+This can happen when there are too many mobs in the world for the current number  
 of players in the lobby, or if the area is protected e.g. by spawn area protection.
 
 ## attemptSpawnVehicle

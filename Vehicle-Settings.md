@@ -4,8 +4,8 @@ A vehicle is something you get into and ride, like a boat or a kart. A physics t
 
 Each setting's value is resolved in three steps:
 
-1. The defaults, which are the same for everything.
-2. The physics type (e.g. `CAR`) changes some of them.
+1. The defaults, which are the same for everything.  
+2. The physics type (e.g. `CAR`) changes some of them.  
 3. The tier (e.g. `OFF_ROADER`) changes a few more.
 
 One vehicle can also be given its own value for a setting, which beats all three - but only for whoever rides it.
@@ -187,7 +187,7 @@ Each example changes the setting on one vehicle, where the id came from `attempt
 
 **Default:** `null`
 
-Caps how fast it falls while flying. Only used when `airborneMovement` is `"heading"`.
+Caps how fast it falls while flying. Only used when `airborneMovement` is `"heading"`.  
 `null` = it falls at full speed. See `FallSpeedLimitOpts`.
 
 ```js
@@ -202,7 +202,7 @@ api.setVehicleSetting(hovercraftId, "airborneFallSpeedLimit", { maxFallSpeed: 4,
 
 **Default:** `null`
 
-Lets it fly once mid-air and descending. Supported movement types: `GLIDING` and `FLOATING`.
+Lets it fly once mid-air and descending. Supported movement types: `GLIDING` and `FLOATING`.  
 `null` = it cannot fly. See `AirborneModeOpts`.
 
 ```js
@@ -321,8 +321,8 @@ api.setVehicleSetting(kartId, "disableFootstepSounds", false)
 
 **Default:** `null`
 
-A badge shown to the rider for as long as they ride. `null` = none. `icon` is an ingame icon or an
-item name. `name` must be one that a physics type already uses, such as `"Driving"` or `"Boating"`,
+A badge shown to the rider for as long as they ride. `null` = none. `icon` is an ingame icon or an  
+item name. `name` must be one that a physics type already uses, such as `"Driving"` or `"Boating"`,  
 because only those are cleared again when the rider gets off.
 
 ```js
@@ -440,7 +440,7 @@ api.setVehicleSetting(kartId, "height", 0.9)
 
 **Default:** `0`
 
-How bouncy walls are: `0` stops dead, `1` keeps all its speed. Stacks with the `bounciness` client
+How bouncy walls are: `0` stops dead, `1` keeps all its speed. Stacks with the `bounciness` client  
 option. Rebounds have a floor speed, so slow bumps come back faster than they arrived.
 
 ```js
@@ -467,8 +467,8 @@ api.setVehicleSetting(carId, "horizontalImpactCameraShake", { minSpeed: 6, inten
 
 **Default:** `1`
 
-How hard the rider pushes off the ground when jumping, compared to a normal jump. `0` = cannot jump.
-Multiplies the `jumpAmount` client option rather than replacing it, and heavier types need a bigger
+How hard the rider pushes off the ground when jumping, compared to a normal jump. `0` = cannot jump.  
+Multiplies the `jumpAmount` client option rather than replacing it, and heavier types need a bigger  
 value to reach the same height.
 
 ```js
@@ -535,7 +535,7 @@ api.setVehicleSetting(kartId, "minHorizontalSpeedToBounce", 8)
 
 **Default:** `0`
 
-How fast it must be falling, in blocks per second, before `verticalBounciness` applies. `0` bounces
+How fast it must be falling, in blocks per second, before `verticalBounciness` applies. `0` bounces  
 off any contact, leaving a bouncy vehicle jiggling in place.
 
 ```js
@@ -575,7 +575,7 @@ api.setVehicleSetting(boatId, "pose", "sleeping")
 
 **Default:** `[0, 0, 0]`
 
-Where the rider sits, as `[x, y, z]` blocks from the middle of the vehicle. A rideable mob defaults
+Where the rider sits, as `[x, y, z]` blocks from the middle of the vehicle. A rideable mob defaults  
 to its own ride height rather than to this type's value.
 
 ```js
@@ -606,8 +606,8 @@ api.setVehicleSetting(kartId, "speedMultiplier", 24)
 
 Named as the block followed by the setting: `"IceSpeedMultiplier"`, `"Red ConcreteSpeedMultiplier"`.
 
-Extra speed multipliers for the block underfoot, by block name. Solid ground only, and stacks with
-`speedMultiplier` and the land/fluid/air multiplier. When several listed blocks are underfoot, the
+Extra speed multipliers for the block underfoot, by block name. Solid ground only, and stacks with  
+`speedMultiplier` and the land/fluid/air multiplier. When several listed blocks are underfoot, the  
 value furthest from `1` wins.
 
 ```js
@@ -635,7 +635,7 @@ api.setVehicleSetting(kartId, "standingFriction", 0.2)
 
 **Default:** `null`
 
-Makes it steer like a car: left and right turn it rather than sliding it sideways. `null` moves
+Makes it steer like a car: left and right turn it rather than sliding it sideways. `null` moves  
 freely in any direction, like a walking player. See `SteeringOpts`.
 
 ```js
@@ -664,7 +664,7 @@ upwardImpulseOnUse: 30
 
 **Default:** `0`
 
-How bouncy the floor is: `0` lands flat, `1` bounces back as fast as it fell. Stacks with the
+How bouncy the floor is: `0` lands flat, `1` bounces back as fast as it fell. Stacks with the  
 `bounciness` client option, and has the same rebound floor as `horizontalBounciness`.
 
 ```js

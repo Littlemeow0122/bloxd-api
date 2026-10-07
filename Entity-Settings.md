@@ -1,7 +1,7 @@
 # Entity Settings
 
-An "Entity Setting" impacts how a player sees or interacts with another player or entity.
-E.g. Player 1 could have an otherEntitySetting for entity 2 as opacity set to 0.5. This means player 1 sees entity 2 as partly see-through. Player1 is the relevant player, player2 is the targeted player.
+An "Entity Setting" impacts how a player sees or interacts with another player or entity.  
+E.g. Player 1 could have an otherEntitySetting for entity 2 as opacity set to 0.5. This means player 1 sees entity 2 as partly see-through. Player1 is the relevant player, player2 is the targeted player.  
 These API methods allow you to modify entity settings:
 
 ```js
