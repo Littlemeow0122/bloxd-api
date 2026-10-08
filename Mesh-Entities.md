@@ -80,6 +80,8 @@ type LeaderboardOpts = {
     title?: string
     scoreLabel?: string
     size?: number // Uniform scale of the 2.5 by 3.75 block board. Defaults to 1.
+    width?: number // Absolute width in blocks, overriding the width derived from size.
+    height?: number // Absolute height in blocks, overriding the height derived from size.
 }
 ```
 

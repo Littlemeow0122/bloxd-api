@@ -1,4 +1,4 @@
-# Block Names (1308 blocks)
+# Block Names (1331 blocks)
  Each block name listed below is the ROOT block - use it exactly as shown (no suffix).  
  Some blocks also have meta variants, indicated by codes in brackets.  
  ROOT BLOCK: Use the block name exactly as listed (e.g. "Maple Door", "Wheat", "Stone")  
@@ -1329,4 +1329,27 @@ Black Chalk Bricks Stairs [H,R,SC]
 Toxic Waste Barrel  
 Toxic Waste  
 Ancient Maple Log  
-Evil Lucky Block
+Evil Lucky Block  
+INTERNAL_MESH_Small Twin Icicle  
+INTERNAL_MESH_Medium Icicle  
+INTERNAL_MESH_Large Icicle  
+INTERNAL_MESH_Large Twin Icicle  
+Noticeboard Standing [R]  
+Noticeboard Standing Top [R]  
+Noticeboard Standing Bottom [R]  
+Noticeboard Standing Left [R]  
+Noticeboard Standing Right [R]  
+Noticeboard Standing Top Left [R]  
+Noticeboard Standing Top Right [R]  
+Noticeboard Standing Bottom Left [R]  
+Noticeboard Standing Bottom Right [R]  
+Noticeboard Standing Leg [R]  
+Noticeboard Wall [R]  
+Noticeboard Wall Top [R]  
+Noticeboard Wall Bottom [R]  
+Noticeboard Wall Left [R]  
+Noticeboard Wall Right [R]  
+Noticeboard Wall Top Left [R]  
+Noticeboard Wall Top Right [R]  
+Noticeboard Wall Bottom Left [R]  
+Noticeboard Wall Bottom Right [R]
