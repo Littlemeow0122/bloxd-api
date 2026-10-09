@@ -27,7 +27,7 @@ onPlayerStartChargingItem onPlayerFinishChargingItem onPlayerAttemptFish
 onPlayerSucceededFishCatch onPlayerFailedFishCatch onPlayerFinishQTE
 onPlayerToggledShopMenu onPlayerPlayedEmote onPlayerEnteredVehicle
 onPlayerExitedVehicle onPlayerBoughtShopItem onPlayerPressedButton
-onUiRequestResponded doPeriodicSave
+onPlayerReleasedButton onUiRequestResponded doPeriodicSave
 
 To use a callback, just assign a function to it in the world code!
 tick = () => {}			 or			 function tick() {}
@@ -341,7 +341,7 @@ Return "preventChange" to stop it. Then onPlayerChangeBlock will not run.
 
 Growing EZ placements validate at request time and again at completion; keep validation free of rewards or charges.
 
-When placing, fromBlock is Air. When breaking, toBlock is Air.
+When placing, fromBlock is Air, or the slab a matching slab completes. When breaking, toBlock is Air.
 
 ### Parameters:
 | Parameter | Type | Description |
@@ -488,7 +488,7 @@ Writing the target yourself completes that EZ request immediately, without delay
 
 Native games/plugins receive uninterrupted before-commit notifications and must veto in onPlayerAttemptChangeBlock.
 
-When placing, fromBlock is Air. When breaking, toBlock is Air.
+When placing, fromBlock is Air, or the slab a matching slab completes. When breaking, toBlock is Air.
 
 ### Parameters:
 | Parameter | Type | Description |
@@ -901,6 +901,15 @@ Called when a player presses a custom button
 |-----------|------|-------------|
 | playerId | `PlayerId` | The id of the player pressing the button |
 | buttonId | `string` | The id of the button pressed |
+
+## onPlayerReleasedButton
+Called when a player releases a custom button
+
+### Parameters:
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| playerId | `PlayerId` | The id of the player releasing the button |
+| buttonId | `string` | The id of the button released |
 
 ## onPlayerRequestChunk
 Called when a player requests a chunk

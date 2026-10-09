@@ -451,4 +451,13 @@ export type BlockbenchLerpModeSchema = "linear" | "catmullrom"
 type TimestampString = string
 
 type Point = Vec3
+
+type CustomButtonType = {
+    id: string // Identifier for the button. Used in the callbacks onPlayerPressedButton and onPlayerReleasedButton.
+    icon: string // Icon to display for the button. Can be a font awesome icon such as "house" or a bloxd icon such as "Dirt".
+    keycode: string // Key to trigger the button. Use a keycode like "KeyR" for the letter R. Allowed keys are alphanumeric and arrow keys.
+    description?: string // Optional description for the button explaining what it does.
+}
+
+type CustomButtonsType = CustomButtonType[]
 ```

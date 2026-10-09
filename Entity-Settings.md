@@ -170,6 +170,7 @@ Multiline text info for displaying text next to entities:
      content: (CustomTextStyling[number] | RankInfo)[]    // Array of text content
      backgroundColor?: string                             // Background color
      animateIn?: boolean                                  // Whether text should animate in character-by-character
+     visibleThroughWalls?: boolean                        // Overrides canSeeNametagsThroughWalls for this text: true draws it over blocks and entities, false lets them hide it
  }
  ```
 
